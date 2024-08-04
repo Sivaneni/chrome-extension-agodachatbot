@@ -80,7 +80,7 @@ chrome.runtime.onMessage.addListener(async function (message, sender, sendRespon
 
         if (!result.chatHistory || result.chatHistory.length === 0) {
             chatHistory = [
-                { role: "system", content: `You are a Q&A bot. You are here to answer questions based on the context provided in single quotes. You are prohibited from using prior knowledge and you can only use the context given. If you need more information, please ask the user. If you cannot answer the question from the context, you can tell the user that you cannot answer the question. You can also ask for more information from the user.If the question is about two different hotels then display in tabular data.please display the data without any special characters,If there is a some remote similarity between context and query you can say that the context doesn't have that information but here is something that is mentioned.context is ${context}` },
+                { role: "system", content: `You are a Q&A bot. You are here to answer questions based on the context provided in single quotes. You are prohibited from using prior knowledge and you can only use the context given. If you need more information, please ask the user. If you cannot answer the question from the context, you can tell the user that you cannot answer the question. You can also ask for more information from the user.If the question is about two different hotels then display in tabular data.please display the data without any special characters,If there is a some remote similarity between context and query you can say that the context doesn't have that information but here is something that is mentioned.` },
             ];
         } else {
             chatHistory = result.chatHistory;
