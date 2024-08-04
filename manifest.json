@@ -1,0 +1,62 @@
+{
+    "name": "Agoda OPENAI Chatbot",
+    "version": "0.1.0",
+    "description": "chat agent for agoda",
+    "default_locale": "en",
+    "permissions": [
+        "storage",
+        "tabs",
+        "background",
+        "scripting",
+        "activeTab",
+        "downloads",
+        "localStorage"
+    ],
+    "host_permissions": [
+        "https://www.agoda.com/*",
+        "https://api.openai.com/v1/completions"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://*.agoda.com/*"
+            ],
+            "js": [
+                "contentScript.js",
+                "extract.js"
+            ]
+        }
+    ],
+    "web_accessible_resources": [
+        {
+            "resources": [
+                "assets/bookmark.png",
+                "assets/play.png",
+                "assets/delete.png",
+                "assets/save.png",
+                "assets/chatbot.png",
+                "extract.js",
+                "popup.html",
+                "styles.css",
+                "chatbot.js"
+            ],
+            "matches": [
+                "https://*.agoda.com/*"
+            ]
+        }
+    ],
+    "action": {
+        "default_icon": {
+            "16": "assets/ext-icon.png",
+            "24": "assets/ext-icon.png",
+            "32": "assets/ext-icon.png"
+        },
+        "default_title": "agoda chatbot",
+        "default_popup": "popup.html"
+    },
+    "options_page": "options/options.html",
+    "manifest_version": 3
+}

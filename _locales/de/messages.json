@@ -1,0 +1,34 @@
+{
+  "optionsTitle": {
+    "message": "Einstellungen",
+    "description": "Titel der Einstellungen-Seite"
+  },
+  "apiTitle": {
+    "message": "Gib deinen OpenAI API Schlüssel ein, um die Erweiterung zu nutzen:",
+    "description": "Titel der API-Schlüssel-Eingabe"
+  },
+  "apiModelTitle": {
+    "message": "Wähle ein API Model aus:",
+    "description": "Titel der API-Model-Auswahl"
+  },
+  "lastMessagesTitle": {
+    "message": "Letzte Nachrichten",
+    "description": "Titel der letzten Nachrichten"
+  },
+  "optionsInputPlaceholder": {
+    "message": "Hier API Schlüssel eingeben",
+    "description": "Platzhalter für API Schlüssel Eingabe"
+  },
+  "optionsApiKeyNote": {
+    "message": "Dein API Schlüssel wird nur lokal gespeichert und nicht an Dritte weitergegeben.",
+    "description": "Hinweis zum API Schlüssel"
+  },
+  "optionsSaveButtonText": {
+    "message": "Speichern",
+    "description": "Text für den Button zum Speichern des API Schlüssels"
+  },
+  "optionsDeleteButtonText": {
+    "message": "API Schlüssel löschen",
+    "description": "Text für den Button zum Löschen des API Schlüssels"
+  }
+}

@@ -1,0 +1,14 @@
+The content script sends the extracted text to the background script.
+The background script stores the extracted text in chrome.storage.
+The OpenAI API sends a message to the background script requesting the stored text.
+The background script retrieves the stored text from chrome.storage and sends it back to the OpenAI API.
+This way, the chatbot can communicate with chrome.storage via the background script.
+
+
+Content Script to Background Script: When the content script interacts with the webpage and extracts relevant information (such as text content), it can send a message to the background script containing this information.
+
+Background Script to chrome.storage: The background script, which has access to chrome.storage, can receive the message from the content script, extract the relevant information, and store it in chrome.storage.
+
+OpenAI API to Background Script: When the OpenAI API needs access to the stored information, it can send a message to the background script requesting this data.
+
+Background Script to OpenAI API: Upon receiving the request, the background script can retrieve the information from chrome.storage and send it back to the OpenAI API.
